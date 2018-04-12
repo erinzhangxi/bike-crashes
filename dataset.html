@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>INSH2102 Bostonography</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>INSH2102 Bostonography</strong> Final Project</a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Bike Crashes Dataset</h1>
+									</header>
+
+									<span class="image main"><iframe src="https://drive.google.com/file/d/1GVTthWwfJ8q-UxYDJtnjZZAkYF5kEzXw/preview" width="640" height="480"></iframe></span>
+
+
+									<p>We’ll first implement descriptive statistics on different variables on the dataset, specifically X and Y axis, RequestType, RequestDate, and UserType. </p>
+									<p>X and Y represent the location of the traffic crash reported. We could either map the data or directly use the interactive map provided by Vision Zero Boston, and study the if there’s any consistency in location. Request Type is a nominal data. These are a set of reasons of the accident chosen by the reporter, such as “it’s too far / too many lanes to cross”, and “bike facilities don’t exist or need improvement”. Request Date is an interval data that describes when the incident occurs. Depending on the complexity, we can bread down the time into year, month, or even time of the day. We could study if there’s a change in traffic crash over the past few years since the data was recorded, or examine if there’s a peak in traffic crash during a specific period of the year. Alternatively, we could study if most accidents happen in the morning, or at night. UserType is used to filter out the type of crashes we want to study.
+									With these data, inferential studies could be conducted to examine the correlations between variables. </p>
+									<p>One of the tools we use in this project is Vision Zero Boston that display traffic crashes on the map. This is from VisionZeroBoston.org created by City of Boston, in order to focus on the city resources to improve strategies to eliminate fatal and serious traffic crashes in the city by 2030. The website itself does not provide too much technical information, but it gives a broad introduction of what the program is for and what actions we as residents can do. From looking at the source code, the interactive mapping tool used on the site imported data from the dataset of City of Boston, and used Google Mapping Tool API to stack the selected data on top of the map. ArcGIS Online is then used to build and share interactive map.</p>
+
+									<hr class="major" />
+
+									<h2>Request Type</h2>
+									<p>This is the reason traffic crashes recorded by police.</p>
+
+									<hr class="major" />
+
+									<h2>Time (Year/Month/Hour)</h2>
+										<p>This variable could help us understand when most traffic crashes take place.</p>
+									<hr class="major" />
+
+									<h2>Location</h2>
+									<p>We'll look at the longitude and latitude to determine the location of traffic crashes, and study if there's a pattern among places with most frequent accidents.</p>
+								</section>
+
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+						<div id="sidebar">
+							<div class="inner">
+
+								<!-- Search -->
+									<section id="search" class="alt">
+										<form method="post" action="#">
+											<input type="text" name="query" id="query" placeholder="Search" />
+										</form>
+									</section>
+
+								<!-- Menu -->
+									<nav id="menu">
+										<header class="major">
+											<h2>Menu</h2>
+										</header>
+										<ul>
+											<li><a href="index.html">Homepage</a></li>
+											<li><a href="dataset.html">Dataset</a></li>
+											<li>
+												<span class="opener">Descriptive Analysis</span>
+												<ul>
+													<li><a href="#">Month</a></li>
+													<li><a href="#">Hour</a></li>
+													<li><a href="#">Year</a></li>
+													<li><a href="#">Location</a></li>
+												</ul>
+											</li>
+											<li>
+												<span class="opener">Correlational Analysis</span>
+												<ul>
+													<li><a href="#">Month & Crashes</a></li>
+													<li><a href="#">Hour & Crashes</a></li>
+													<li><a href="#">Location & Crashes</a></li>
+													<li><a href="#">Feugiat Veroeros</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Results</a></li>
+											<li><a href="#">Discussions</a></li>
+											<li><a href="#">Future Work</a></li>
+										</ul>
+									</nav>
+
+								<!-- Section -->
+									<section>
+										<header class="major">
+											<h2>Get in touch</h2>
+										</header>
+										<p>I'm a fourth year computer science combined information science student at Northeastern University. This website is for the final project of a course I'm taking my last semester, INSH2102 Bostonography.</p>
+										<ul class="contact">
+											<li class="fa-envelope-o"><a href="#">zhang.xi2@husky.neu.edu</a></li>
+										</ul>
+									</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
